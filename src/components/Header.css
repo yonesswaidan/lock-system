@@ -1,0 +1,59 @@
+/* App.css */
+/* General Styles */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-item {
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  transition: background-color 0.3s, border-color 0.3s;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-item:hover {
+  background-color: #007bff;
+  color: #ffffff;
+  border-color: #007bff;
+}
+
+/* Main Content Styles */
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  margin-top: 80px; /* Height of the navbar */
+}
+
+h1 {
+  font-size: 4em;
+  margin: 0;
+  color: #007bff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
