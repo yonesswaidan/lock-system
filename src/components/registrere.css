@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
@@ -9,7 +10,7 @@ body {
     color: #333;
 }
 
-
+/* Navbar Styles */
 .navbar {
     display: flex;
     justify-content: space-around;
@@ -40,13 +41,13 @@ body {
     border-color: #007bff;
 }
 
-
+/* Main Content Styles */
 .main-content {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     flex-grow: 1;
-    margin-top: 80px; 
+    margin-top: 80px; /* Height of the navbar */
     padding: 20px;
 }
 
@@ -57,49 +58,58 @@ h1 {
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
 
-
-.search-section {
+.support-section {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 800px;
+    max-width: 600px;
     text-align: center;
 }
 
-.search-section h2 {
+.support-section h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
 }
 
-#searchInput {
-    padding: 10px;
+.support-section p {
     font-size: 1em;
-    width: 100%;
-    max-width: 400px;
     margin-bottom: 20px;
+}
+
+.support-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.support-form label {
+    font-weight: bold;
+    text-align: left;
+}
+
+.support-form input,
+.support-form textarea {
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-}
-
-#skabTable {
+    font-size: 1em;
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+    box-sizing: border-box;
 }
 
-#skabTable th, #skabTable td {
-    padding: 12px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-#skabTable th {
+.support-form button {
+    padding: 10px 20px;
     background-color: #007bff;
-    color: white;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-#skabTable tr:hover {
-    background-color: #f1f1f1;
+.support-form button:hover {
+    background-color: #0056b3;
 }
